@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GardenShop_build/static/css/main.b11883ab.css",
-    "main.js": "/GardenShop_build/static/js/main.491ac186.js",
+    "main.js": "/GardenShop_build/static/js/main.b85c6214.js",
     "static/media/bannerImg.png": "/GardenShop_build/static/media/bannerImg.219152481630c1bc0f3f.png",
     "static/media/404.png": "/GardenShop_build/static/media/404.3219f7d6e78cc363bcc7.png",
     "static/media/cuponImg.png": "/GardenShop_build/static/media/cuponImg.c036eea09188ab215dcb.png",
@@ -13,10 +13,10 @@
     "static/media/instIcon.svg": "/GardenShop_build/static/media/instIcon.79e332fe334c2b2ab52e.svg",
     "index.html": "/GardenShop_build/index.html",
     "main.b11883ab.css.map": "/GardenShop_build/static/css/main.b11883ab.css.map",
-    "main.491ac186.js.map": "/GardenShop_build/static/js/main.491ac186.js.map"
+    "main.b85c6214.js.map": "/GardenShop_build/static/js/main.b85c6214.js.map"
   },
   "entrypoints": [
     "static/css/main.b11883ab.css",
-    "static/js/main.491ac186.js"
+    "static/js/main.b85c6214.js"
   ]
 }
