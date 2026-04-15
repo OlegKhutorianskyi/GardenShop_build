@@ -13,16 +13,28 @@ const SendCupon = () => {
     e.preventDefault();
     dispatch(fetchCupon(input));
   };
+  // const checkChange = ({ target }) => {
+  //   const value = +target.value;
+  //   setInput(value);
+  //   const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  //   if (!re.test(String(value).toLowerCase())) {
+  //     setPhonError('no correct phone number')
+  //   } else {
+  //     setPhonError('')
+  //   }
+  // };
   const checkChange = ({ target }) => {
-    const value = +target.value;
-    setInput(value);
-    const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-    if (!re.test(String(value).toLowerCase())) {
-      setPhonError('no correct phone number')
-    } else {
-      setPhonError('')
-    }
-  };
+      const value = target.value.trim();
+      setInput(value);
+      // const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+      const re = /^[+]?[(]?\d{3}[)]?[-\s.]?\d{3}[-\s.]?\d{4,6}$/;
+
+      // if (!re.test(String(value).toLowerCase())) {
+        setPhonError(re.test(value) ? '' : 'no correct phone number')
+      // } else {
+      //   setPhonError('')
+      // }
+    };
   const notify = () => toast(`sale add!`);
   return (
     <>
