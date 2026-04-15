@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { removeAll } from '../../store/slice/basketSlice';
 import { fetchOrder } from '../../store/slice/orderSlice';
 import { ToastContainer, toast } from 'react-toastify';
-import { parsePhoneNumberFromString } from 'libphonenumber-js';
 
 const BasketCalculation = () => {
 
@@ -41,7 +40,8 @@ const BasketCalculation = () => {
     }
     const checkChange = ({ target }) => {
       const value = target.value.trim();
-      const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+      // const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+      const re = /^[+]?[(]?\d{3}[)]?[-\s.]?\d{3}[-\s.]?\d{4,6}$/;
 
       // if (!re.test(String(value).toLowerCase())) {
         setPhonError(re.test(value) ? '' : 'no correct phone number')
