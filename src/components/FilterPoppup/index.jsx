@@ -83,11 +83,12 @@ const FilterPoppup = ({active, setActive}) => {
                     <option value="2">By price down</option>
                 </select>
             </div> 
-            <button className={s.resetFilterBtn} onClick={() => (
-                setPrice(initialValue),
-                setCheck(false),
-                setActive(false)
-            )}>
+            <button className={s.resetFilterBtn} 
+            onClick={() => {
+                setPrice(initialValue);
+                setCheck(false);
+                setActive(false);
+            }}>
                 reset filters
             </button>
     </div>

@@ -88,10 +88,10 @@ const FiterBar = () => {
                         <option value="2">By price down</option>
                     </select>
                 <button className={s.resetFilterBtn} 
-                    onClick={() => (
-                        setPrice(initialValue),
-                        setCheck(false)
-                    )}>
+                    onClick={() => {
+                        setPrice(initialValue);
+                        setCheck(false);
+                    }}>
                         reset
                 </button>
             </div>
